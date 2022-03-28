@@ -93,7 +93,7 @@ var LineChart = /** @class */ (function (_super) {
                         });
                     };
                     output.push(   <Svg width={10} height={10}>
-                        <Image x={cx - 15} y={cy - 15}  href={require('./ic_point.png')} width={30} height={30} />
+                        <Image x={cx - 15} y={cy - 15}  href={require('../../../../assets/icons/ic_point.png')} width={30} height={30} />
                     </Svg>, renderDotContent({ x: cx, y: cy, index: i, indexData: x }));
                 });
             });
