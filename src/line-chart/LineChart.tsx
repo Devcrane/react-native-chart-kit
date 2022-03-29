@@ -92,9 +92,7 @@ var LineChart = /** @class */ (function (_super) {
                             getColor: function (opacity) { return _this.getColor(dataset, opacity); }
                         });
                     };
-                    output.push(   <Svg width={10} height={10}>
-                        <Image x={cx - 15} y={cy - 15}  href={require('../../../../assets/icons/ic_point.png')} width={30} height={30} />
-                    </Svg>, renderDotContent({ x: cx, y: cy, index: i, indexData: x }));
+                     output.push(<Image x={cx - 15} y={cy - 15} href={{uri: 'https://somday.s3.ap-northeast-2.amazonaws.com/somday/ic_point.png'}} width={30} height={30} onPress={onPress}/>, renderDotContent({ x: cx, y: cy, index: i, indexData: x }));
                 });
             });
             return output;
